@@ -46,7 +46,7 @@ def index():
             if not expirations:
                 error = f"No options data found for {symbol}."
             else:
-                limit = min(15, len(expirations))
+                limit = min(5, len(expirations))
                 summary_data = []
                 
                 for date in expirations[:limit]:
